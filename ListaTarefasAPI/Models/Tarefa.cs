@@ -2,9 +2,9 @@
 {
     public class Tarefa
     {
-        public int tarefaId { get; set; }
+        public int TarefaId { get; set; } // Corrigido para PascalCase
         public string Descricao { get; set; }
-        public bool Concluída { get; set; }
+        public bool Concluida { get; set; } // Corrigido para remover o acento
         public int TipoTarefaId { get; set; }
         public TipoTarefa? TipoTarefa { get; set; }
     }
