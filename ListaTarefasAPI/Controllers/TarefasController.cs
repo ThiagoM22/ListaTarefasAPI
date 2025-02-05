@@ -44,7 +44,7 @@ namespace ListaTarefasAPI.Controllers
 
         [HttpGet("concluidas")]
         //A public sempre é async pois caso contrario travaria o sistema
-        //Ações get sempre são do tipo get
+        //Ações get sempre são do tipo task
         public async Task<ActionResult<IEnumerable<Tarefa>>> GetTarefasConcluidas()
         {
             // =>-Tal que 
